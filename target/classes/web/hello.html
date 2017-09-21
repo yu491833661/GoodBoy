@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link th:href="@{bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+    <link th:href="@{bootstrap/css/bootstrap-theme.min.css}" rel="stylesheet"/>
+    <meta charset="UTF-8"/>
+    <title>hello</title>
+</head>
+<body>
+hello
+
+<form method="POST" enctype="multipart/form-data" action="/upload">
+
+    <p>文件：<input type="file" name="file"/></p>
+
+    <p><input type="submit" value="上传" /></p>
+
+</form>
+</body>
+</html>

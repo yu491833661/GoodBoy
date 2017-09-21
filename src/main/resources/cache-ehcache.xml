@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://www.ehcache.org/ehcache.xsd"
+         updateCheck="false" monitoring="autodetect" dynamicConfig="true">
+
+    <diskStore path="java.io.tmpdir/ehcache"/>
+
+    <!--单位与人员-->
+    <cache name="core.ou" maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" diskSpoolBufferSizeMB="20"
+           eternal="false" timeToIdleSeconds="3600" timeToLiveSeconds="7200" memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+    <!--文章-->
+    <cache name="yjh.article.article" maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" diskSpoolBufferSizeMB="20"
+           eternal="false" timeToIdleSeconds="3600" timeToLiveSeconds="7200" memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+    <cache name="yjh.article.front" maxEntriesLocalHeap="10000" maxEntriesLocalDisk="1000" diskSpoolBufferSizeMB="20"
+           eternal="false" timeToIdleSeconds="3600" timeToLiveSeconds="7200" memoryStoreEvictionPolicy="LFU"
+           transactionalMode="off">
+        <persistence strategy="localTempSwap"/>
+    </cache>
+
+</ehcache>
