@@ -67,7 +67,6 @@ public class WebMvcConfig extends WebMvcConfigurerAdapter {
     /**
      * 错误页面配置
      *
-     * @return
      */
     @Bean
     public EmbeddedServletContainerCustomizer containerCustomizer() {

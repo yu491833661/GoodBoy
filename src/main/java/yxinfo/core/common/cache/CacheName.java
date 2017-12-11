@@ -51,4 +51,5 @@ public interface CacheName {
         // 网页友情链接
         String AD = "yjh.propaganda.ad";
     }
+    //88888
 }
